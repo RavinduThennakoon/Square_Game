@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Square_GameApp: App {
+    init() {
+           FirebaseApp.configure()
+       }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           RootView()
         }
     }
 }
